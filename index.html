@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <h1>Pomodoro Clock</h1>
+    <div class="container">
+        <div class="tiempo">
+            <h3>Session</h3>
+            <div id="text-time"></div>
+            <div class="segundo" id="display-number">00:00</div>
+            <div class="botones">
+                <a href="#" class="start" id="start"><i class="fas fa-play"></i>&nbsp;Start</a>
+                <a href="#" class="reset" id="reset"><i class="fas fa-stop-circle"></i>&nbsp;Reset</a>
+            </div>
+        </div>
+        <div class="sesiones">
+            <div class="sesion">
+                <h3>Work Length</h3>
+                <div class="time">
+                    <a href="#" id="session-up"><i class="fas fa-arrow-circle-up"></i></a>
+                    <div class="time-length">
+                        <p><span id="session-number">5</span>min</p>
+                    </div>
+                    <a href="#" id="session-down"><i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+            <div class="break">
+                <h3>Break Length</h3>
+                <div class="break-length">
+                    <a href="#" id="break-up"><i class="fas fa-arrow-circle-up"></i></a>
+                    <div class="break-time">
+                        <p><span id="break-number">5</span>min</p>
+                    </div>
+                    <a href="#" id="break-down"><i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
